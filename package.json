@@ -1,0 +1,25 @@
+{
+  "name": "gsp",
+  "displayName": "GSP-language",
+  "description": "GSP language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gsp",
+      "aliases": ["Grails Server Page (GSP)", "gsp"],
+      "extensions": [".gsp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gsp",
+      "scopeName": "text.html.gsp",
+      "path": "./syntaxes/gsp.tmLanguage"
+    }]
+  }
+}
