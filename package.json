@@ -1,25 +1,47 @@
 {
-  "name": "gsp",
-  "displayName": "GSP-language",
-  "description": "GSP language support",
+  "name": "gsp-syntax-highlight",
+  "displayName": "GSP-syntax-highlight",
+  "description": "GSP language syntax highlighting support",
+  "icon": "images/GSP-syntax.png",
+  "publisher": "Infomatrix",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.82.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kristianmandrup/vs-code-gsp-syntax-highlight"
+  },
+  "keywords": [
+    "GSP",
+    "Groovy",
+    "Grails",
+    "script",
+    "syntax"
+  ],
   "categories": [
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "gsp",
-      "aliases": ["Grails Server Page (GSP)", "gsp"],
-      "extensions": [".gsp"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "gsp",
-      "scopeName": "text.html.gsp",
-      "path": "./syntaxes/gsp.tmLanguage"
-    }]
+    "languages": [
+      {
+        "id": "gsp",
+        "aliases": [
+          "Groovy Server Page (GSP)",
+          "gsp"
+        ],
+        "extensions": [
+          ".gsp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "gsp",
+        "scopeName": "text.html.gsp",
+        "path": "./syntaxes/gsp.tmLanguage"
+      }
+    ]
   }
 }

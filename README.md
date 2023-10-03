@@ -1,6 +1,7 @@
-# VS Code GSP language support
+# VS Code GSP syntax highlighting
 
-Provides syntax highlighting for Grails GSP files with `.gsp` extension in VS Code.
+Provides syntax highlighting for Groovy Server Page (GSP) files for Grails.
+Files must have the `.gsp` extension for the syntax highlighting to be activated.
 
 ## Features
 
